@@ -1,5 +1,3 @@
-
-
 #include <SoftwareSerial.h>
  
 SoftwareSerial BT = SoftwareSerial(3, 2);
@@ -14,21 +12,17 @@ void setup() {
 
 void loop(){
    //
-  delay(1000);
-  Serial.println("Ready");
-  
+  //delay(100);
+  //Serial.println("Ready");
  // while (! Serial.available());
     while (Serial.available() > 0) {
       char c =Serial.read();
-      Serial.write(c);
+      //Serial.write(c);
           BT.write(c);
           delay(10);
     //char inChar = Serial.read();
     //txtMsg += inChar;
   } 
-  
     //  Serial.println(txtMsg);
     //Serial.println(txtMsg.length());
-  
-  
 }

@@ -168,9 +168,9 @@ void setup() {
   BT.begin(9600);
  
   Serial.println("Softserial/BT test!\n\rPress any key+return to start");
-  while (! Serial.available());
+  //while (! Serial.available());
  
-  printabletest(); delay(200);
+  //printabletest(); delay(200);
   //altkeystest();
   //nonprinting();
   //iphonekeyboard();
